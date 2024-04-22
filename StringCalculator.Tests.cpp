@@ -34,7 +34,7 @@ TEST(StringCalculatorTestSuite,GivenStringZeroIsExpected){
 TEST(StringCalculatorTestSuite,GivenStringTwoNumberStringSumExpected){
     //Arrange
     StringCalculator objUnderTest;
-    string input="1 2";
+    string input="1,2";
     int expectedValue=3;
     //Act
    int actualValue=  objUnderTest.Add(input);
@@ -44,7 +44,7 @@ TEST(StringCalculatorTestSuite,GivenStringTwoNumberStringSumExpected){
 TEST(StringCalculatorTestSuite,GivenStringThreeNumberStringSumExpected){
     //Arrange
     StringCalculator objUnderTest;
-    string input="1 2 3";
+    string input="1,2,3";
     int expectedValue=3;
     //Act
    int actualValue=  objUnderTest.Add(input);
