@@ -45,6 +45,26 @@ TEST(StringCalculatorTestSuite,GivenStringThreeNumberStringSumExpected){
     //Arrange
     StringCalculator objUnderTest;
     string input="1,2,3";
+    int expectedValue=6;
+    //Act
+   int actualValue=  objUnderTest.Add(input);
+    //Assert
+    ASSERT_EQ(actualValue,expectedValue);
+}
+TEST(StringCalculatorTestSuite,GivenStringThreeNumberCommaandNewLineStringSumExpected){
+    //Arrange
+    StringCalculator objUnderTest;
+    string input="1\n2,3";
+    int expectedValue=6;
+    //Act
+   int actualValue=  objUnderTest.Add(input);
+    //Assert
+    ASSERT_EQ(actualValue,expectedValue);
+}
+TEST(StringCalculatorTestSuite,GivenStringDelimitterandNumberStringSumExpected){
+    //Arrange
+    StringCalculator objUnderTest;
+    string input="//;\n1;2";
     int expectedValue=3;
     //Act
    int actualValue=  objUnderTest.Add(input);
