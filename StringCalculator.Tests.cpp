@@ -31,6 +31,27 @@ TEST(StringCalculatorTestSuite,GivenStringZeroIsExpected){
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
+TEST(StringCalculatorTestSuite,GivenStringTwoNumberStringSumExpected){
+    //Arrange
+    StringCalculator objUnderTest;
+    string input="12";
+    int expectedValue=3;
+    //Act
+   int actualValue=  objUnderTest.Add(input);
+    //Assert
+    ASSERT_EQ(actualValue,expectedValue);
+}
+TEST(StringCalculatorTestSuite,GivenStringThreeNumberStringSumExpected){
+    //Arrange
+    StringCalculator objUnderTest;
+    string input="123";
+    int expectedValue=3;
+    //Act
+   int actualValue=  objUnderTest.Add(input);
+    //Assert
+    ASSERT_EQ(actualValue,expectedValue);
+}
+
 
 
 
