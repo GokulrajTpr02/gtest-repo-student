@@ -72,6 +72,17 @@ TEST(StringCalculatorTestSuite,GivenStringDelimitterandNumberStringSumExpected){
     ASSERT_EQ(actualValue,expectedValue);
 }
 
+TEST(StringCalculatorTestSuite,GivenStringwithAfterMaxValues_StringSumExpected){
+    //Arrange
+    StringCalculator objUnderTest;
+    string input="1,1,1001,4";
+    int expectedValue=6;
+    //Act
+   int actualValue=  objUnderTest.Add(input);
+    //Assert
+    ASSERT_EQ(actualValue,expectedValue);
+}
+
 
 
 
