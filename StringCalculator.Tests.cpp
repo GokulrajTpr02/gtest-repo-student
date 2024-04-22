@@ -11,7 +11,7 @@ TEST(StringCalculatorTestSuite,GivenEmptyStringZeroIsExpected){
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
-TEST(StringCalculatorTestSuite,GivenEmptyStringOneIsExpected){
+TEST(StringCalculatorTestSuite,GivenStringOneIsExpected){
     //Arrange
     StringCalculator objUnderTest;
     string input="1";
@@ -21,4 +21,16 @@ TEST(StringCalculatorTestSuite,GivenEmptyStringOneIsExpected){
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
+TEST(StringCalculatorTestSuite,GivenStringZeroIsExpected){
+    //Arrange
+    StringCalculator objUnderTest;
+    string input="0";
+    int expectedValue=1;
+    //Act
+   int actualValue=  objUnderTest.Add(input);
+    //Assert
+    ASSERT_EQ(actualValue,expectedValue);
+}
+
+
 
